@@ -21,4 +21,3 @@ console.log(c,d,e)
 var n=prompt("Enter your name");
 alert(`hii ${n}`); 
 document.write(n);
-console.log(n);
