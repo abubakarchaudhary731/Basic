@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fb front.css">
+    <title> FACEBOOK </title>
+</head>
+<body>
+    <style>
+        div{
+        background-color: gainsboro;
+        color: blue;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 50px; 
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    </style>
+    
+    <h1 style="text-align: center; background-color: blue; color: beige;"> Facebook </h1>
+
+    <form style="background-color: white;
+            box-shadow: inset;
+            color: black;
+            padding: 10px;
+            border-radius: 18px;
+            width: 30%;
+            margin-top: 20px;
+            margin-left: 470px;
+            margin-bottom: 100px;">
+            
+    
+    <h2 style="color: royalblue;"> Log in to Facebook </h2>
+    <input type="email" id="email" placeholder="email address " required> <br> <br>
+    <input type="password" id="password" placeholder="password" required> <br> 
+    <br>
+    <button onclick="validate()"> Log in</button> 
+    <br>
+    <br>
+    <a href="https://www.facebook.com/help/213395615347144/?helpref=uf_share">  Forget Pasword </a> 
+    <br><br>
+    <a href="D:\HTML\4 Sign up page.html"> Sign up </a>
+
+</form>
+    
+
+<script>
+    function validate() {
+        let myemail = "abc786@gmail.com";
+        let mypassword = "12345";
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        if (email === myemail) { 
+            if (password===mypassword) {
+                
+                alert("Login Successfully!");
+            }
+            
+        } else {
+            alert("Wrong Email Password");
+        }
+    }
+
+</script>
+
+</body>
+</html>

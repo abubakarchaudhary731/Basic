@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temperature </title>
+</head>
+<body>
+    <h1> Temperature App </h1>
+    <label for="c"> Enter Temperature: </label>
+    <input type="number" name="c" id="c" maxlength="2"><br><br>
+    <button onclick="temp()"> Click Me </button>
+
+    <p id="print"></p>
+    <p id="1"></p>
+    <p id="2"></p>
+
+                <br><br>
+
+    <!--<label for="change"> Enter Temperature: </label>
+    <input type="number" name="change" id="change">
+    <select  id=""> 
+        <option value="cel" > Celcius </option>
+        <option value="forn"> Fahrenheit </option>
+        <option value="kel"> Kelvin </option>
+    </select>
+    <button onclick="ch()"> Change </button>-->
+
+
+    <script>
+        function temp() {
+            var a = document.getElementById("c").value;
+            
+            if (a<=5) {
+                document.getElementById("print").innerHTML=`Temperature is too Low (too Cool) `;
+                
+            }
+            else if(a<20){
+                document.getElementById("print").innerHTML=`Temperature is Low (Cold) `;
+            }
+            else if (a<=36) {
+                document.getElementById("print").innerHTML=`Temperature is Normal`;  
+            }
+             
+           else if (a<=45) {
+                document.getElementById("print").innerHTML=`Temperature is High (Hot)`;
+            } 
+            else  {
+                document.getElementById("print").innerHTML=`Temperature is too High (too Hot)`;
+            }
+
+            var d = (9/5 *a)+32;
+            document.getElementById("1").innerHTML=`In Fahrenheit, the value is ${d}`;
+
+            var e = +a + +273.15;
+            document.getElementById("2").innerHTML=`In kelvin, the value is ${e}`;
+        }
+    </script>
+    
+</body>
+</html>

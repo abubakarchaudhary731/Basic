@@ -1,0 +1,93 @@
+<!-- For Header Complete code press (shift 1 & Enter)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table & Forms </title>
+</head>
+<body>
+    <h3> Practice for Table & Forms </h3>
+
+<table border="2"  width="50%" cellspacing="5">
+    <tr> <!-- it is table Row.-->
+        <th> Students </th> <!-- use for table Heading -->
+        <th> Math </th>
+        <th> English </th>
+        <th> Science </th>
+    </tr>
+    <tr> <!-- 2nd Row -->
+        <td> Abu Bakar </td> <!-- table data -->
+        <td> 90 </td>
+        <td> 85 </td>
+        <td> 70 </td>
+    </tr>
+    <tr>
+        <td> <input type="text" placeholder="Enter Name"> </td>
+        <td> <input type="number" > </td>
+        <td> <input type="number"> </td>
+        <td> <input type="number"> </td>
+    </tr>
+</table>
+                              <br>  <hr>  <br>  <br> 
+
+<fieldset>
+<legend> Form </legend>
+    
+    <form>
+    <input type="file"> 
+    <input type="submit" value="upload">
+    <br><br>
+
+    
+    <label for="fn"> Full Name: </label>
+    <input type="text" name="fn" required >  <!-- Add Required-->
+            <br><br>
+            
+            <label for="Email"> Email: </label>
+    <input type="email" name="Email" required >
+    <br><br>
+    
+    <label for="pw"> Password: </label>
+    <input type="password" name="pw" required minlength="8"> <!-- minimum Length include seperatly for password length -->
+    <br><br>
+
+    <label for="gender"> Male </label>
+    <input type="radio" name="gender" value="male" checked> <!-- cheaked sy by defult laga mily ga nishan-->
+                <br>
+    <label for="gender"> Female </label>
+    <input type="radio" name="gender" value="female">
+            <br><br>
+            
+    <input type="datetime-local" >
+            <br><br>
+            
+            <select name="Country">
+                <option value="pk"> Pakistan </option>
+                <option value="in"> India </option>
+        <option value="us"> United State </option>
+        <option value="uk"> United Kingdom </option>
+        <option value="gr"> Germany </option>
+    </select>
+                <br><br>
+                
+                <textarea name="comment" cols="5" rows="6"> Enter your Feedback </textarea>
+                
+                
+
+    <button type="submit"> Submit </button>
+
+    
+</form>
+</fieldset>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13596.155281108038!2d74.3198743!3d31.5779833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b289c293081%3A0x44bb36a5a9747a85!2sNR%20cosmetic!5e0!3m2!1sen!2s!4v1676828590366!5m2!1sen!2s" width="300" height="350" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<br><br>
+&#169; by p2p clouds
+
+</body>
+</html>

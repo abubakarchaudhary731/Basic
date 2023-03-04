@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Online Student Form </title>
+</head>
+<body>
+    <fieldset>
+    <form>
+        <h1 style="text-align: center;"> Student Admission Form </h1>
+        <h2> Student's Profile </h2>
+        <img src="./1.jpg" height="300" width="350" align="right">   
+        
+        <label for="fn"> Full Name: </label>
+        <input type="text" name="fn" maxlength="16" required placeholder="Enter Your Name"> <br><br>
+
+        <label for="Father"> Father Name: </label>
+        <input type="text" name="Father"  maxlength="16" required  placeholder="Enter Your Father Name"> <br><br>
+
+        <label for="email"> Email: </label>
+        <input type="email" name="email" required placeholder="abc@gmail.com"><br><br>
+
+        <label for="mbn"> Mobile Number: </label>
+        <input type="number" name="mbn" maxlength="11" required placeholder="0300 1234567"><br><br>
+
+        <label for="gender"> Gender: </label><br>
+        Male <input type="radio" name="gender" value="male">
+        Female <input type="radio" name="gender" value="female" > <br><br>
+
+        <label for="date"> Date of Birth: </label>
+        <input type="date" name="date" ><br><br>
+
+        <label for="address"> Address: </label>
+        <input type="address" name="address" >
+        <label for="city"> City: </label>
+        <select name="city">
+            <option value="lhr"> Lahore </option>
+            <option value="kchi">Karachi</option>
+            <option value="isl">Islamad</option>
+            <option value="pesh">Peshawar</option>
+            <option value="qu">Quetta</option>
+            <option value="murre">Murree</option>
+            <option value="Pindi">Pindi</option>
+            <option value="multan">Multan</option>
+            <option value="sakhar">Sakhar</option>
+        </select>
+        
+        <br><br>
+        <h2> Previous Academic Record: </h2>
+        <table border="1">
+            <tr>
+                <th>Name Of Previous School/College </th>
+                <th> Class </th>
+                <th> Year Of Study </th>
+                <th> Percentage/Grade </th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text" name="" id=""></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id=""></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        <br>
+   
+        <dl> <dt>
+            <label for="specialization"> Specialization: </label>
+            </dt>
+            <dd>
+            <input type="checkbox" name="specialization"> Computer Science <br>
+            <input type="checkbox" name="specialization"> Information Technology <br>
+            <input type="checkbox" name="specialization"> Computer Architechure <br>
+            <input type="checkbox" name="specialization"> TELE Communication <br>
+            <input type="checkbox" name="specialization"> Web Development <br>
+            <input type="checkbox" name="specialization"> Game Development <br>
+            <input type="checkbox" name="specialization"> Software Engineer <br>
+            </dd><br>
+
+            <dt> Extra Language: </dt>
+            <dd>
+                <input type="checkbox" >Pashto
+                <input type="checkbox" >Urdu
+                <input type="checkbox" >Punabi
+            </dd>
+        </dl>
+        <button  type="submit" > Submit  </button>
+        <button type="reset" > Reset </button>
+    </form>
+    <br>
+    &#9400;Copyright Reserveds
+    </fieldset>
+</body>
+</html>

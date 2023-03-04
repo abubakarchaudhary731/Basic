@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Even Odd </title>
+</head>
+<body>
+   <label for="value"> Enter Value: </label>
+    <input type="number"  id="value"><br><br>
+    <button onclick="check()"> Check </button>
+    <p id="print"></p>
+
+
+    <script>
+        function check() {
+            var value = document.querySelector("#value").value;
+            var result = value%2;
+           if (result==0) {
+               document.querySelector("#print").innerHTML = `it's Even Number`;            
+            
+           } else {
+            document.querySelector("#print").innerHTML = `it's Odd Number`;
+           }
+
+        }
+    </script>
+</body>
+</html>

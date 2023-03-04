@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Percentage Calculator </title>
+</head>
+<body>
+    <h1> Percentage Calculator </h1>
+
+
+
+    <label for="tv"> Enter Your Total Value: </label>
+    <input type="number" name="tm" required id="totalvalue"><br><br>
+    <label for="secondv"> Enter Your 2nd Value: </label>
+    <input type="number" name="obm" required id="2value"><br><br>
+
+    <button onclick=" percentage()" > Percentage </button>
+    <button onclick="add()"> ADD </button>
+    <button onclick="sub()"> Subtract </button>
+    <button onclick="mult()"> Multiply </button>
+    <button onclick="div()"> Divide </button>
+ 
+        <p id="per"> </p>
+
+
+    <script>
+        function percentage() {
+        var tv = document.getElementById("totalvalue").value;
+        var secondv = document.getElementById("2value").value;
+        var p = (secondv/tv)*100;
+        document.getElementById("per").innerHTML= `Your Percentage is` + '  ' + p;
+        }
+
+        function sub() {
+        var tv = document.getElementById("totalvalue").value;
+        var secondv = document.getElementById("2value").value;
+        var sb= (tv-secondv);
+        document.getElementById("per").innerHTML= `Your Subtraction is` + '  ' + sb;
+        }
+
+
+        function mult() {
+        var tv = document.getElementById("totalvalue").value;
+        var secondv = document.getElementById("2value").value;
+        var mlt= (tv*secondv);
+        document.getElementById("per").innerHTML= `Your Multiplication is` + '  ' + mlt;
+        }
+
+
+        function div() {
+        var tv = document.getElementById("totalvalue").value;
+        var secondv = document.getElementById("2value").value;
+        var dv= (tv/secondv);
+        document.getElementById("per").innerHTML= `Your Division is` + '  ' + dv;
+        }
+
+        function add() {
+        var tv = document.getElementById("totalvalue").value;
+        var secondv = document.getElementById("2value").value;
+        var ad= +tv + + secondv;
+        document.getElementById("per").innerHTML= `Your addition is` + '  ' + ad;
+        }
+
+
+    </script>
+</body>
+</html>

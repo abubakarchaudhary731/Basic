@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grade Book </title>
+</head>
+<body>
+    <h2> Student Grade Book </h2>
+    <label for="marks"> Input Your Marks: </label>
+    <input type="number" name="marks" id="marks" required>
+    <button onclick="g()"> RUN </button>
+    <p id="ans"> </p>
+
+    <script>
+        function g() {
+            var a = document.getElementById("marks").value;
+            
+            if (a>=95 && a<=100) {
+                document.getElementById("ans").innerHTML=` Your Grade Is A+`;
+            }
+             else if (a>=90) {
+                document.getElementById("ans").innerHTML=` Your Grade Is A`;
+             }
+             else if(a>=80){
+                document.getElementById("ans").innerHTML=` Your Grade Is B`; 
+             }
+             else if(a>=70){
+                document.getElementById("ans").innerHTML=` Your Grade Is C`;
+             }
+             else if(a>=60){
+                document.getElementById("ans").innerHTML=` Your Grade Is D`;
+             }
+             else if(a>=50){
+                document.getElementById("ans").innerHTML=` Your Grade Is E`;
+             }
+             else {
+                document.getElementById("ans").innerHTML=`Your Grade Is F`;
+            }
+            
+        }
+    </script>
+</body>
+</html>
