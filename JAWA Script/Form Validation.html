@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Validation </title>
+</head>
+<body>
+    <fieldset>
+
+        <form >
+            
+        <label for="emai"> Enter Your Email Address: </label>
+        <input type="email" name="emai" id="email"  > <br><br>
+    <label for="pas">Enter Your Password: </label>
+    <input type="password" name="pas" id="password"  > <br><br>
+    <button onclick="validate()"> Click </button> <br>
+    <p id="print"></p>
+    
+</form>
+</fieldset>
+
+    <script>
+        function validate() {
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            if (email == "" || pass == "" ) {
+                alert(`Please Enter Email or password`)
+                return false;
+                
+            } else{
+               document.getElementById("print").innerHTML= `Wait....`   
+            }   
+        }
+
+    </script>
+</body>
+</html>
