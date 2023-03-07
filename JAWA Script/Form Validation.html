@@ -9,13 +9,13 @@
 <body>
     <fieldset>
 
-        <form >
+        <form onsubmit="validate()">
             
         <label for="emai"> Enter Your Email Address: </label>
         <input type="email" name="emai" id="email"  > <br><br>
     <label for="pas">Enter Your Password: </label>
-    <input type="password" name="pas" id="password"  > <br><br>
-    <button onclick="validate()"> Click </button> <br>
+    <input type="password" name="pas" id="password"  maxlength="8"> <br><br>
+    <button> Click </button> <br>
     <p id="print"></p>
     
 </form>
@@ -25,15 +25,25 @@
         function validate() {
             var email = document.getElementById("email").value;
             var pass = document.getElementById("password").value;
+            var mine = "abc786@gmail.com";
+            var minep = "12345";
+
             if (email == "" || pass == "" ) {
-                alert(`Please Enter Email or password`)
+                alert( `Please Enter Email or password`);
                 return false;
-                
-            } else{
-               document.getElementById("print").innerHTML= `Wait....`   
+            }
+
+             else if (email == mine && pass==minep){
+                alert(`Login Successfully`);
+                document.getElementById("print").innerHTML="ok";
+            }
+
+             else{
+              alert("Incorrect Username & Password");   
             }   
         }
 
     </script>
 </body>
 </html>
+
