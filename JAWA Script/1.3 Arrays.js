@@ -1,4 +1,4 @@
-const stdNames = [    "M UMER NADEEM",
+const stdNames = [  "M UMER NADEEM",
                     "ZAIN KHALID",
                     "ABU BAKAR",
                     "YUSRA NOOR",
@@ -17,11 +17,11 @@ document.write(`${stdNames} <br> <br>`);
 stdNames.push("Ali"); // Add New Element. 
 document.write(`${stdNames} <br> <br>`);
 
+stdNames.reverse()
+document.write(`${stdNames} <br> <br>`);
+
 stdNames.sort(); // for Sequance.
 document.write(`${stdNames}  <br> <br>`);
-
-stdNames.reverse();
-document.write(`${stdNames} <br> <br>`);
 
 stdNames.pop(); // Remove Last Element.
 document.write(`${stdNames} <br> <br>`);

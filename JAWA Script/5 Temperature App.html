@@ -46,8 +46,12 @@
            else if (a<=45) {
                 document.getElementById("print").innerHTML=`Temperature is High (Hot)`;
             } 
-            else  {
+            else if(a<=100) {
                 document.getElementById("print").innerHTML=`Temperature is too High (too Hot)`;
+            }
+
+            else  {
+                document.getElementById("print").innerHTML=`Your Temperature is too High "Temperature Undefined"`;
             }
 
             var d = (9/5 *a)+32;
