@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Loop</title>
+</head>
+<body>
+    <h2> Condition On Do While Loop </h2>
+    <label for="num"> Enter Number Between O to 100 (Otherwise You Face Problem)</label> <br><br>
+    <input type="number" name="num" id="1">
+    <button onclick="limit()"> Submit </button>
+
+    <p id="print"></p>
+
+
+    <script>
+        function limit() {
+           
+
+            do {
+                input = document.getElementById("1").value;
+            } while (!(input >= 0 && input < 100)) {
+                document.getElementById("print").innerHTML = "AP Kamyab Howe"
+            }
+
+           
+            
+        }
+    </script>
+</body>
+</html>

@@ -16,8 +16,11 @@
     <script>
         function g() {
             var a = document.getElementById("marks").value;
-            
-            if (a>=95 && a<=100) {
+
+            if (a>100) {
+                alert(`Invalid Input  "Please Enter Correct Number" `);  
+            }
+            else if (a>=95) {
                 document.getElementById("ans").innerHTML=` Your Grade Is A+`;
             }
              else if (a>=90) {
@@ -35,8 +38,11 @@
              else if(a>=50){
                 document.getElementById("ans").innerHTML=` Your Grade Is E`;
              }
-             else {
+             else if (a>=0){
                 document.getElementById("ans").innerHTML=`Your Grade Is F`;
+            }
+            else {
+                alert(`Invalid Input  "Please Enter Correct Number"`)
             }
             
         }

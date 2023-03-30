@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LOOP </title>
+</head>
+<body>
+    
+    <div id="print"></div> 
+    
+
+
+    <script>
+       var ab = ["ABU BAKAR CHAUDHARY"];
+      
+       // For Loop.
+        for (let i = 1; i <=12 ; i+=4) {
+            document.getElementById("print").innerHTML += `${ab} <br> <br>`;
+        }
+        
+        // While Loop.
+        let i = 0;
+        while (i<=5) {
+            document.getElementById("print").innerHTML += `${i}  <br>`;
+        i++;
+        }
+
+        // DO While Loop.
+        let j = 20;
+        do {
+            document.getElementById("print").innerHTML += `${j}  <br>`;
+            j+=3;
+        } while (j<=30);
+
+
+       const fruits = ["Apples","Banana","Mango","WaterMelon","Orange"];
+       for (x of fruits) {
+       
+        document.getElementById("print").innerHTML += `${x} <br> <br>`;
+       }
+    </script>
+</body>
+</html>

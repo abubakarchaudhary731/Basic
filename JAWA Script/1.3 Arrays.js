@@ -25,3 +25,7 @@ document.write(`${stdNames}  <br> <br>`);
 
 stdNames.pop(); // Remove Last Element.
 document.write(`${stdNames} <br> <br>`);
+
+stdNames.shift(); // Remove first Element.
+document.write(`${stdNames} <br> <br>`);
+
